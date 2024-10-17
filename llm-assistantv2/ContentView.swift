@@ -10,6 +10,7 @@
  - store all chats and system prompts and responses (mid)
  - add a refresh to the state of the chat (high)
  - add live suggestions to the interface when the user is coding cells (low priority)
+ - cells selected should be chunked together and embedded with highest similarity given to model to augment memory/understanding in code writting and understanding over large contexts
  */
 
 import SwiftUI
