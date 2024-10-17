@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		766CAA632CC0FE3E00719600 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 766CAA622CC0FE3E00719600 /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		766CAA452CC0F31D00719600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766CAA2C2CC0F31B00719600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 766CAA332CC0F31B00719600;
+			remoteInfo = "llm-assistantv2";
+		};
+		766CAA4F2CC0F31D00719600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766CAA2C2CC0F31B00719600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 766CAA332CC0F31B00719600;
+			remoteInfo = "llm-assistantv2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		766CAA342CC0F31B00719600 /* llm-assistantv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "llm-assistantv2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		766CAA442CC0F31D00719600 /* llm-assistantv2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "llm-assistantv2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		766CAA4E2CC0F31D00719600 /* llm-assistantv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "llm-assistantv2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		766CAA362CC0F31B00719600 /* llm-assistantv2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "llm-assistantv2";
+			sourceTree = "<group>";
+		};
+		766CAA472CC0F31D00719600 /* llm-assistantv2Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "llm-assistantv2Tests";
+			sourceTree = "<group>";
+		};
+		766CAA512CC0F31D00719600 /* llm-assistantv2UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "llm-assistantv2UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		766CAA312CC0F31B00719600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766CAA632CC0FE3E00719600 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766CAA412CC0F31D00719600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766CAA4B2CC0F31D00719600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		766CAA2B2CC0F31B00719600 = {
+			isa = PBXGroup;
+			children = (
+				766CAA362CC0F31B00719600 /* llm-assistantv2 */,
+				766CAA472CC0F31D00719600 /* llm-assistantv2Tests */,
+				766CAA512CC0F31D00719600 /* llm-assistantv2UITests */,
+				766CAA352CC0F31B00719600 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		766CAA352CC0F31B00719600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				766CAA342CC0F31B00719600 /* llm-assistantv2.app */,
+				766CAA442CC0F31D00719600 /* llm-assistantv2Tests.xctest */,
+				766CAA4E2CC0F31D00719600 /* llm-assistantv2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		766CAA332CC0F31B00719600 /* llm-assistantv2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766CAA582CC0F31D00719600 /* Build configuration list for PBXNativeTarget "llm-assistantv2" */;
+			buildPhases = (
+				766CAA302CC0F31B00719600 /* Sources */,
+				766CAA312CC0F31B00719600 /* Frameworks */,
+				766CAA322CC0F31B00719600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				766CAA362CC0F31B00719600 /* llm-assistantv2 */,
+			);
+			name = "llm-assistantv2";
+			packageProductDependencies = (
+				766CAA622CC0FE3E00719600 /* Alamofire */,
+			);
+			productName = "llm-assistantv2";
+			productReference = 766CAA342CC0F31B00719600 /* llm-assistantv2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		766CAA432CC0F31D00719600 /* llm-assistantv2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766CAA5B2CC0F31D00719600 /* Build configuration list for PBXNativeTarget "llm-assistantv2Tests" */;
+			buildPhases = (
+				766CAA402CC0F31D00719600 /* Sources */,
+				766CAA412CC0F31D00719600 /* Frameworks */,
+				766CAA422CC0F31D00719600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				766CAA462CC0F31D00719600 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				766CAA472CC0F31D00719600 /* llm-assistantv2Tests */,
+			);
+			name = "llm-assistantv2Tests";
+			packageProductDependencies = (
+			);
+			productName = "llm-assistantv2Tests";
+			productReference = 766CAA442CC0F31D00719600 /* llm-assistantv2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		766CAA4D2CC0F31D00719600 /* llm-assistantv2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766CAA5E2CC0F31D00719600 /* Build configuration list for PBXNativeTarget "llm-assistantv2UITests" */;
+			buildPhases = (
+				766CAA4A2CC0F31D00719600 /* Sources */,
+				766CAA4B2CC0F31D00719600 /* Frameworks */,
+				766CAA4C2CC0F31D00719600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				766CAA502CC0F31D00719600 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				766CAA512CC0F31D00719600 /* llm-assistantv2UITests */,
+			);
+			name = "llm-assistantv2UITests";
+			packageProductDependencies = (
+			);
+			productName = "llm-assistantv2UITests";
+			productReference = 766CAA4E2CC0F31D00719600 /* llm-assistantv2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		766CAA2C2CC0F31B00719600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					766CAA332CC0F31B00719600 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					766CAA432CC0F31D00719600 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 766CAA332CC0F31B00719600;
+					};
+					766CAA4D2CC0F31D00719600 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 766CAA332CC0F31B00719600;
+					};
+				};
+			};
+			buildConfigurationList = 766CAA2F2CC0F31B00719600 /* Build configuration list for PBXProject "llm-assistantv2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 766CAA2B2CC0F31B00719600;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				766CAA612CC0FE3E00719600 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 766CAA352CC0F31B00719600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				766CAA332CC0F31B00719600 /* llm-assistantv2 */,
+				766CAA432CC0F31D00719600 /* llm-assistantv2Tests */,
+				766CAA4D2CC0F31D00719600 /* llm-assistantv2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		766CAA322CC0F31B00719600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766CAA422CC0F31D00719600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766CAA4C2CC0F31D00719600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		766CAA302CC0F31B00719600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766CAA402CC0F31D00719600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766CAA4A2CC0F31D00719600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		766CAA462CC0F31D00719600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 766CAA332CC0F31B00719600 /* llm-assistantv2 */;
+			targetProxy = 766CAA452CC0F31D00719600 /* PBXContainerItemProxy */;
+		};
+		766CAA502CC0F31D00719600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 766CAA332CC0F31B00719600 /* llm-assistantv2 */;
+			targetProxy = 766CAA4F2CC0F31D00719600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		766CAA562CC0F31D00719600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		766CAA572CC0F31D00719600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		766CAA592CC0F31D00719600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "llm-assistantv2/llm-assistantv2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"llm-assistantv2/Preview Content\"";
+				DEVELOPMENT_TEAM = 42R8ZPM5N8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "This app needs access to your Documents folder.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ebowwa.llm-assistantv2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		766CAA5A2CC0F31D00719600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "llm-assistantv2/llm-assistantv2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"llm-assistantv2/Preview Content\"";
+				DEVELOPMENT_TEAM = 42R8ZPM5N8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "This app needs access to your Documents folder.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ebowwa.llm-assistantv2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		766CAA5C2CC0F31D00719600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42R8ZPM5N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ebowwa.llm-assistantv2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/llm-assistantv2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/llm-assistantv2";
+			};
+			name = Debug;
+		};
+		766CAA5D2CC0F31D00719600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42R8ZPM5N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ebowwa.llm-assistantv2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/llm-assistantv2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/llm-assistantv2";
+			};
+			name = Release;
+		};
+		766CAA5F2CC0F31D00719600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42R8ZPM5N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ebowwa.llm-assistantv2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "llm-assistantv2";
+			};
+			name = Debug;
+		};
+		766CAA602CC0F31D00719600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42R8ZPM5N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ebowwa.llm-assistantv2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "llm-assistantv2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		766CAA2F2CC0F31B00719600 /* Build configuration list for PBXProject "llm-assistantv2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766CAA562CC0F31D00719600 /* Debug */,
+				766CAA572CC0F31D00719600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766CAA582CC0F31D00719600 /* Build configuration list for PBXNativeTarget "llm-assistantv2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766CAA592CC0F31D00719600 /* Debug */,
+				766CAA5A2CC0F31D00719600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766CAA5B2CC0F31D00719600 /* Build configuration list for PBXNativeTarget "llm-assistantv2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766CAA5C2CC0F31D00719600 /* Debug */,
+				766CAA5D2CC0F31D00719600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766CAA5E2CC0F31D00719600 /* Build configuration list for PBXNativeTarget "llm-assistantv2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766CAA5F2CC0F31D00719600 /* Debug */,
+				766CAA602CC0F31D00719600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		766CAA612CC0FE3E00719600 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		766CAA622CC0FE3E00719600 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 766CAA612CC0FE3E00719600 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 766CAA2C2CC0F31B00719600 /* Project object */;
+}
