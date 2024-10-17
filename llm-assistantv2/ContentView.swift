@@ -64,7 +64,7 @@ struct LLMResponse: Codable {
         let total_tokens: Int
     }
 }
-
+/**
 // ====== MARK: - Data Manager Singleton ======
 
 class DataManager: ObservableObject {
@@ -137,7 +137,7 @@ class DataManager: ObservableObject {
         saveCells()
     }
 }
-
+*/
 // ====== MARK: - LLM Client Delegate ======
 
 class LLMClientDelegate: NSObject, URLSessionDataDelegate {
@@ -448,6 +448,135 @@ struct CodeCellView: View {
 
 // ====== MARK: - MagicTextBox ======
 
+// ====== **MARK: - Data Manager Singleton ======**
+
+class DataManager: ObservableObject {
+    static let shared = DataManager()
+    @Published var codeCells: [CodeCell] = []
+    private let fileName = "code_cells.json"
+    
+    private init() {
+        loadCells()
+    }
+    
+    // Get the file URL in the app's Documents directory
+    private func getFileURL() -> URL? {
+        let fm = FileManager.default
+        do {
+            let docs = try fm.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            return docs.appendingPathComponent(fileName)
+        } catch {
+            print("Error getting file URL: \(error)")
+            return nil
+        }
+    }
+
+    // Load cells from JSON file
+    func loadCells() {
+        guard let url = getFileURL(),
+              let data = try? Data(contentsOf: url) else {
+            self.codeCells = []
+            return
+        }
+        do {
+            let decoder = JSONDecoder()
+            self.codeCells = try decoder.decode([CodeCell].self, from: data)
+        } catch {
+            print("Error decoding JSON: \(error)")
+            self.codeCells = []
+        }
+    }
+
+    // Save cells to JSON file
+    func saveCells() {
+        guard let url = getFileURL() else { return }
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(codeCells)
+            try data.write(to: url)
+        } catch {
+            print("Error encoding/saving JSON: \(error)")
+        }
+    }
+
+    // Add a new code cell
+    func addCell(_ cell: CodeCell) {
+        codeCells.append(cell)
+        saveCells()
+    }
+
+    // Update an existing cell
+    func updateCell(_ cell: CodeCell) {
+        if let index = codeCells.firstIndex(where: { $0.id == cell.id }) {
+            codeCells[index] = cell
+            saveCells()
+        }
+    }
+
+    // Delete cells
+    func deleteCells(at offsets: IndexSet) {
+        codeCells.remove(atOffsets: offsets)
+        saveCells()
+    }
+    
+    // MARK: - Chunking Code Cells
+    func chunkSimilarCells() -> [[CodeCell]] {
+        let threshold: Float = 0.8 // Similarity threshold
+        var chunks: [[CodeCell]] = []
+        
+        for cell in codeCells {
+            var addedToChunk = false
+            for i in 0..<chunks.count {
+                if let representative = chunks[i].first {
+                    let similarity = calculateSimilarity(between: representative.code, and: cell.code)
+                    if similarity >= threshold {
+                        chunks[i].append(cell)
+                        addedToChunk = true
+                        break
+                    }
+                }
+            }
+            if !addedToChunk {
+                chunks.append([cell])
+            }
+        }
+        return chunks
+    }
+
+    // MARK: - Embedding Code Cells
+    func embedChunks(using model: String = "all-minilm") {
+        let chunks = chunkSimilarCells()
+        for chunk in chunks {
+            let codes = chunk.map { $0.code }
+            let embedding = requestEmbedding(for: codes, model: model)
+            print("Embedding for chunk: \(embedding)")
+        }
+    }
+
+    // Helper function to calculate similarity between two strings (code cells)
+    func calculateSimilarity(between codeA: String, and codeB: String) -> Float {
+        let embeddingA = requestEmbedding(for: [codeA])
+        let embeddingB = requestEmbedding(for: [codeB])
+        return cosineSimilarity(embeddingA, embeddingB)
+    }
+
+    // Placeholder for embedding request (real API call can replace this)
+    func requestEmbedding(for texts: [String], model: String = "all-minilm") -> [Float] {
+        // Replace this with a real API call if needed
+        return texts.map { _ in Float.random(in: 0..<1) } // Random embedding for placeholder
+    }
+
+    // Cosine similarity calculation between two vectors
+    func cosineSimilarity(_ vectorA: [Float], _ vectorB: [Float]) -> Float {
+        let dotProduct = zip(vectorA, vectorB).map(*).reduce(0, +)
+        let magnitudeA = sqrt(vectorA.map { $0 * $0 }.reduce(0, +))
+        let magnitudeB = sqrt(vectorB.map { $0 * $0 }.reduce(0, +))
+        return dotProduct / (magnitudeA * magnitudeB)
+    }
+}
+
+// ====== **MARK: - MagicTextBox ======**
+
 struct MagicTextBox: View {
     @Binding var selectedCellIDs: Set<UUID>
     @State private var objectInput: String = ""
@@ -459,7 +588,6 @@ struct MagicTextBox: View {
     @State private var showingAlert: Bool = false
     @State private var alertMessage: String = ""
     @State private var savedQuestionInput: String = "" // New state variable
-    // Additional state to hold usage metrics
     @State private var usage: LLMResponse.Usage?
 
     var body: some View {
@@ -573,15 +701,6 @@ struct MagicTextBox: View {
         .alert(isPresented: $showingAlert) {
             Alert(title: Text("Notice"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
-    }
-
-    // Suggest improved prompt
-    func suggestPrompt(for input: String) -> String {
-        // Placeholder for a more sophisticated suggestion mechanism
-        if input.lowercased().contains("write this in a more") {
-            return "Please specify the target language and desired improvements clearly."
-        }
-        return ""
     }
 
     // Perform the magic action
@@ -743,4 +862,20 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+// Function to generate a suggestion based on the user input
+func suggestPrompt(for input: String) -> String {
+    // Example logic for providing a suggestion
+    // Modify this to fit the logic you want for suggesting prompts
+    if input.lowercased().contains("optimize") {
+        return "Would you like suggestions on optimizing performance?"
+    } else if input.lowercased().contains("debug") {
+        return "Would you like help identifying and fixing bugs?"
+    } else if input.lowercased().contains("refactor") {
+        return "Would you like suggestions for refactoring code?"
+    }
+    
+    // Return an empty string if no suggestion is needed
+    return ""
 }
